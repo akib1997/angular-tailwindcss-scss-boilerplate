@@ -1,4 +1,15 @@
-# ClickFlex
+# Angular TailwindCSS SCSS Boilerplate
+
+<p align="center">
+  <img src="https://api.iconify.design/logos:angular-icon.svg" alt="Angular brand" width="100" height="100"/>
+
+  <img src="https://api.iconify.design/logos:tailwindcss.svg" alt="TailwindCSS" width="100" height="100"/>
+
+  <img src="https://api.iconify.design/vscode-icons:file-type-scss.svg" alt="SCSS" width="100" height="100"/>
+</p>
+
+<br>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
 
