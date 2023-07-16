@@ -1,0 +1,73 @@
+<form [formGroup]="form" class="">
+  <div class="flex gap-6 items-center justify-between border-b border-cyan-600 p-4">
+    <span class="text-lg font-medium">Flex Property:</span>
+    <span class="text-lg font-medium">Value</span>
+  </div>
+  <div class="grid gap-4 p-4">
+    <div class="flex gap-6 items-center justify-between">
+      <label class="capitalize font-medium">Display:</label>
+      <select formControlName="display" class="appearance-none shadow block border border-opacity-50 border-cyan-400 leading-6 px-4 py-1 rounded font-medium">
+        <!-- <option value="null">Select</option> -->
+        <ng-container *ngFor="let r of flexValues">
+
+          <option [value]="r" class="font-mediums">{{ r }}</option>
+        </ng-container>
+      </select>
+      <!-- <div class="d">
+        <app-tooltip [property]="'flex'"></app-tooltip>
+      </div> -->
+    </div>
+    <div class="flex gap-6 items-center justify-between">
+      <label class="capitalize font-medium">Flex Direction:</label>
+      <select formControlName="flexDirection" class="appearance-none shadow block border border-opacity-50 border-cyan-400 leading-6 px-4 py-1 rounded font-medium">
+        <!-- <option value="null">Select</option> -->
+        <ng-container *ngFor="let r of flexDirectionValues">
+          <option [value]="r" class="font-mediums">{{ r }}</option>
+        </ng-container>
+      </select>
+    </div>
+
+    <div class="flex gap-6 items-center justify-between">
+      <label class="capitalize font-medium">Flex Wrap:</label>
+      <select formControlName="flexWrap" class="appearance-none shadow block border border-opacity-50 border-cyan-400 leading-6 px-4 py-1 rounded font-medium">
+        <!-- <option value="null">Select</option> -->
+        <ng-container *ngFor="let r of flexWrapValues">
+
+          <option [value]="r" class="font-mediums">{{ r }}</option>
+        </ng-container>
+      </select>
+    </div>
+
+    <div class="flex gap-6 items-center justify-between">
+      <label class="capitalize font-medium">Align Items:</label>
+      <select formControlName="alignItems" class="appearance-none shadow block border border-opacity-50 border-cyan-400 leading-6 px-4 py-1 rounded font-medium">
+        <!-- <option value="null">Select</option> -->
+        <ng-container *ngFor="let r of alignItemsValues">
+
+          <option [value]="r" class="font-mediums">{{ r }}</option>
+        </ng-container>
+      </select>
+    </div>
+
+    <div class="flex gap-6 items-center justify-between">
+      <label class="capitalize font-medium">Justify Content:</label>
+      <select formControlName="justifyContent" class="appearance-none shadow block border border-opacity-50 border-cyan-400 leading-6 px-4 py-1 rounded font-medium">
+        <!-- <option value="null">Select</option> -->
+        <ng-container *ngFor="let r of justifyContentValues">
+
+          <option [value]="r" class="font-mediums">{{ r }}</option>
+        </ng-container>
+      </select>
+    </div>
+    <div class="flex gap-6 items-center justify-between">
+      <label class="capitalize font-medium">Align Content:</label>
+      <select formControlName="alignContent" class="appearance-none shadow block border border-opacity-50 border-cyan-400 leading-6 px-4 py-1 rounded font-medium">
+        <!-- <option value="null">Select</option> -->
+        <ng-container *ngFor="let r of alignContentValues">
+
+          <option [value]="r" class="font-mediums">{{ r }}</option>
+        </ng-container>
+      </select>
+    </div>
+  </div>
+</form>

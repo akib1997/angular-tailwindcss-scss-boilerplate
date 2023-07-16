@@ -1,0 +1,55 @@
+.resizable-draggable {
+  outline: 1px dashed green;
+  &.active {
+      outline-style: solid;
+      background-color: #80ff800d;
+  }
+
+  &:hover {
+      cursor: all-scroll;
+  }
+
+  span:first-of-type {
+      position: absolute;
+      left: 50%;
+      transform: translate3d(-50%, -100%, 0);
+  }
+
+  span:nth-of-type(2) {
+      position: absolute;
+      top: 50%;
+      transform: translate3d(-100%, -50%, 0);
+  }
+
+  span:nth-of-type(3) {
+      position: absolute;
+      transform: translate3d(-100%, -100%, 0);
+  }
+}
+
+.resize-action {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate3d(-50%, -50%, 0) rotateZ(45deg);
+  border-style: solid;
+  border-width: 8px;
+  border-color: transparent transparent transparent #008000;
+  &:hover, &:active {
+      cursor: nwse-resize;
+  }
+}
+
+.resizable-div {
+  // width: 200px;
+  // height: 100px;
+  // background-color: #f0f0f0;
+  // border: 1px solid #ccc;
+  resize: auto;
+  overflow: auto;
+  // cursor: ew-resize;
+}
+
+.resizing {
+  cursor: ew-resize !important;
+}
